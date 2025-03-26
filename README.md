@@ -40,6 +40,7 @@ chmod +x blog-check.sh
 Flag	Description
 --advanced	Run traceroute (4 hops) & subdomain enumeration
 --debug	Dump raw DNS trace & full HTTP headers for troubleshooting
+
 📝 Changelog
 
 v4.3 (2025‑03‑26)
@@ -53,7 +54,7 @@ Fixed: Variable collisions (http_status, forward_status)
 Improved: Consolidated HTTP header fetch into a single request
 New: --debug flag (raw dig +trace + full headers)
 
-v4.2 → v43
+v4.2 → v.3
 Minor bug fixes & documentation polish
 
 v4.0 (TEMPLATE)
