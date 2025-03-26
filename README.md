@@ -54,10 +54,10 @@ Open either script (blog-check.sh or blog-check-template.py) in your editor and 
 
 ⚙️ Usage
 
-Shell
+🐚 Shell
     ./blog-check.sh [--advanced] [--debug]
 
-Python
+🐍 Python
     ./blog-check.py [--advanced] [--debug]
 
 Flag	Description
