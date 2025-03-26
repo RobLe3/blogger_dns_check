@@ -72,4 +72,3 @@ Pull requests are welcome **only** for:
 - Minor bug fixes  
 
 Major feature changes or rewrites will **not** be merged into the main branch — please maintain your own fork for larger adaptations.
-
