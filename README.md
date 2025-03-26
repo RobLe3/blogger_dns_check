@@ -1,10 +1,10 @@
-# 📋 blog‑check
+📋 blog‑check
 
 > A macOS/zsh script for auditing Blogger custom‑domain DNS settings, Google Search Console verification, propagation status, and root‑to‑www forwarding.
 
 ---
 
-## 🚀 Features
+🚀 Features
 
 - ✅ **Self‑Test Environment** (dig, ping, curl)
 - 🔍 **DNS Audit & Propagation**  
@@ -16,17 +16,15 @@
 - 🛠 **Advanced Diagnostics** (`--advanced` flag): traceroute + subdomain enumeration  
 - 🐞 **Debug Mode** (`--debug` flag): raw `dig +trace` + full HTTP headers  
 
----
 
-## 📋 Requirements
+📋 Requirements
 
 - **OS:** macOS (zsh)  
 - **Required CLI Tools:** `dig`, `curl`, `ping`  
 - **Optional (for advanced):** `traceroute`, `subfinder`
 
----
 
-## 💾 Installation
+💾 Installation
 
 ```bash
 git clone https://github.com/<your-username>/blog-check.git
@@ -41,27 +39,35 @@ Flag	Description
 --advanced	Run traceroute (4 hops) & subdomain enumeration
 --debug	Dump raw DNS trace & full HTTP headers for troubleshooting
 
+
 📝 Changelog
 
-v4.3 (2025‑03‑26)
-Added: Nameserver Sanity check (detects glue‑style NS)
-Added: Root A‑Record presence validation
-Added: Blogger HTTPS status (availability + redirect)
-Enhanced: DNS audit shows separate public vs authoritative propagation counts
-Enhanced: Strict root‑forwarding validation (301 → https://www.<CUSTOM_DOMAIN>/)
-Fixed: zsh syntax errors (nested tests, read‑only status)
-Fixed: Variable collisions (http_status, forward_status)
-Improved: Consolidated HTTP header fetch into a single request
-New: --debug flag (raw dig +trace + full headers)
+✨ v4.4 (2025‑03‑26)
+- ✅ **Added** dual‑mode root‑domain detection: Blogger A‑records **or** registrar DNS‑forwarding  
+- 💡 **Enhanced** root‑domain logic to clearly distinguish Blogger vs registrar vs misconfigured states  
+- 🔧 **Fixed** duplicate header block and trailing `echo"` typo  
+- 📝 **Updated** DESCRIPTION (renumbered items; removed obsolete Squarespace section)  
+- ✅ **Improved** DEPENDENCIES spelling (“Alternative”)
 
-v4.2 → v.3
-Minor bug fixes & documentation polish
+✨ v4.3 (2025‑03‑26)
+- ✅ **Added** Nameserver Sanity check (detect glue‑style NS)  
+- ✅ **Added** Root A‑Record presence validation  
+- ✅ **Added** Blogger HTTPS status (availability + redirect)  
+- ⚡ **Enhanced** DNS audit to show separate public vs authoritative propagation counts  
+- ⚡ **Enhanced** strict root‑forwarding validation (301 → https://www.<CUSTOM_DOMAIN>/)  
+- 🐛 **Fixed** zsh syntax errors (nested tests, read‑only variable)  
+- 🐛 **Fixed** variable collisions (`http_status`, `forward_status`)  
+- ⚡ **Improved** HTTP header fetch consolidation  
+- ➕ **New** `--debug` flag (raw `dig +trace` + full headers)
 
-v4.0 (TEMPLATE)
+🛠 v4.2 → v4.3
+- 🐛 Minor bug fixes & documentation polish
 
-Initial script: basic DNS audit, propagation, and forwarding checks
+🚀 v4.0 (TEMPLATE)
+- 🚧 Initial script: basic DNS audit, propagation, and forwarding checks
 
-## 🤝 Contributing
+
+🤝 Contributing
 
 This script was created as a one‑time, standalone audit tool.
 
