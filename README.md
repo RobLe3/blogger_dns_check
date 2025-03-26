@@ -40,7 +40,7 @@ Shell
 ./blog-check.sh [--advanced] [--debug]
 
 Python
-./blog-check-template.py [--advanced] [--debug]
+./blog-check.py [--advanced] [--debug]
 
 Flag	Description
 --advanced	Run traceroute (4 hops) & subdomain enumeration (subfinder)
