@@ -24,15 +24,13 @@ Python Port	Python3	blog-check-template.py	Python 3.9+, colorama, dig, curl, pi
 
 
 💾 Installation
+git clone https://github.com/RobLe3//blog-check.git
+cd blog-check
 
 🐚 Shell version
-git clone https://github.com/<your-username>/blog-check.git
-cd blog-check
 chmod +x blog-check.sh
 
 🐍 Python version
-git clone https://github.com/<your-username>/blog-check.git
-cd blog-check
 pip install -r requirements.txt
 
 
