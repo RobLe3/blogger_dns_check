@@ -37,7 +37,7 @@ __pycache__/
 *.py[cod]
 
 # Git
-#.gitignore
+.gitignore
 
 # IDEs
 .idea/
