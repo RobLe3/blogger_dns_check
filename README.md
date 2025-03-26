@@ -1,10 +1,13 @@
 📋 blog‑check
-An easy‑to‑use tool that instantly verifies your custom Blogger domain is set up correctly. In one command it:
+An easy‑to‑use tool that instantly verifies your custom Blogger domain is set up correctly.
+
+In one command it:
 Checks your internet connection and DNS (domain name) is working
 Confirms your website address (e.g., www.yourdomain.com) points to Blogger
 Ensures any extra blog subdomain and Google Search Console verification record are live everywhere
 Verifies your root domain (yourdomain.com) correctly redirects visitors to the secure “www” address
 Makes sure HTTPS (the little padlock in browsers) is enabled and forced
+
 ▶️ No technical knowledge required — you’ll see clear ✅ passes, ⚠ warnings, or ✗ failures for each step.
 ▶️ Add --advanced for deeper network diagnostics or --debug for full raw DNS and HTTP details.
 
