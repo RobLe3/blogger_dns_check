@@ -71,7 +71,7 @@ from colorama import init, Fore, Style
 init(autoreset=True)
 
 #############################################
-# CONFIGURATION VARIABLES (identical to shell)
+# CONFIGURATION VARIABLES
 #############################################
 CNAME_1_HOST="abcd1234"
 CNAME_1_TARGET="gv-xxxxxxx.dv.googlehosted.com"

@@ -1,6 +1,12 @@
 📋 blog‑check
-
-A macOS/zsh and Python3 audit tool for verifying Blogger custom‑domain DNS settings, Google Search Console verification, propagation status, and root‑to‑www forwarding.
+An easy‑to‑use tool that instantly verifies your custom Blogger domain is set up correctly. In one command it:
+Checks your internet connection and DNS (domain name) is working
+Confirms your website address (e.g., www.yourdomain.com) points to Blogger
+Ensures any extra blog subdomain and Google Search Console verification record are live everywhere
+Verifies your root domain (yourdomain.com) correctly redirects visitors to the secure “www” address
+Makes sure HTTPS (the little padlock in browsers) is enabled and forced
+▶️ No technical knowledge required — you’ll see clear ✅ passes, ⚠ warnings, or ✗ failures for each step.
+▶️ Add --advanced for deeper network diagnostics or --debug for full raw DNS and HTTP details.
 
 
 🚀 Features
@@ -17,30 +23,39 @@ Compare resolution across public (8.8.8.8, 1.1.1.1, 9.9.9.9) vs authoritative na
 
 
 📋 Editions
-
 Script	Language	Filename	Requirements
 Original Shell	zsh	blog-check.sh	macOS, dig, curl, ping
 Python Port	Python3	blog-check-template.py	Python 3.9+, colorama, dig, curl, ping
 
 
 💾 Installation
-git clone https://github.com/RobLe3//blog-check.git
-cd blog-check
+    git clone https://github.com/RobLe3//blog-check.git
+    cd blog-check
 
 🐚 Shell version
-chmod +x blog-check.sh
+    chmod +x blog-check.sh
 
 🐍 Python version
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
+
+⚙️ Configuration
+Open either script (blog-check.sh or blog-check-template.py) in your editor and replace the following defaults with your own values:
+
+        CNAME_1_HOST="abcd1234"
+        CNAME_1_TARGET="gv-xxxxxxx.dv.googlehosted.com"
+        WWW_TARGET="ghs.google.com"
+        BLOG_SUBDOMAIN="blog"
+        BLOGSPOT_DOMAIN="example.blogspot.com"
+        CUSTOM_DOMAIN="example.com"
 
 ⚙️ Usage
 
 Shell
-./blog-check.sh [--advanced] [--debug]
+    ./blog-check.sh [--advanced] [--debug]
 
 Python
-./blog-check.py [--advanced] [--debug]
+    ./blog-check.py [--advanced] [--debug]
 
 Flag	Description
 --advanced	Run traceroute (4 hops) & subdomain enumeration (subfinder)
