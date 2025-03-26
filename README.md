@@ -58,7 +58,18 @@ v4.2 → v.3
 Minor bug fixes & documentation polish
 
 v4.0 (TEMPLATE)
-Initial script: basic DNS audit, propagation, and forwarding checks
-🤝 Contributing
 
-PRs welcome! Please open issues for feature requests or bug reports.
+Initial script: basic DNS audit, propagation, and forwarding checks
+
+## 🤝 Contributing
+
+This script was created as a one‑time, standalone audit tool.
+
+If you’d like to adapt or extend it for your own needs, please **fork** this repository and customize it however you like.
+
+Pull requests are welcome **only** for:
+- Documentation improvements  
+- Minor bug fixes  
+
+Major feature changes or rewrites will **not** be merged into the main branch — please maintain your own fork for larger adaptations.
+
